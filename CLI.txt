@@ -68,6 +68,23 @@ When you rm (remove) secure_file, the error will show in the powershell; but whe
 	cat errors.txt
 	rm secure_file 2> $null // $null means nothing, and this command will remove the error too.
 
+User Account:
+Return all user account in system:
+	Get-LocalUser
+Return all group account in system:
+	Get-LocalGroup
+Return all member of group account:
+	Get-LocalGroupMember Administrators
+Add new user:
+	net user andrea * /add
+Force user change password first time log on:
+	net user andrea /logonpasswordchg:yes
+Combine 2 thing above:
+	net user andrea P@ssword /add /logonpasswordchg:yes
+Delete account:
+	net user andrea /del
+	Remove-LocalUser andrea
+
 Return the assigned ip:
 	ipconfig /release
 Add new ip address:
