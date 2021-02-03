@@ -46,8 +46,27 @@ Open (or create) a file:
 	start farm_animals.txt
 	start wordpad .\farm_animals.txt
 	start notepad new_file
-get alias of command:
+Get alias of command:
 	get-alias ls
+Find string in file:
+	select-string cow farm_animals.txt
+	sls cow farm_animals.txt
+	select-string buffalo *.txt
+	sls buffalo *.txt
+Search file within Directory:
+	ls .\ -Recurse -Filter *.txt
+Print a word on powershell:
+	echo woof
+print a word into text file:
+	echo woof > dog.txt
+Pipeline | can connect many commands:
+	cat farm_animals | sls st
+	cat farm_animals |sls st > st_words.txt
+When you rm (remove) secure_file, the error will show in the powershell; but when you don't want to see them, you can change error's flow into a file, like:
+	rm secure_file
+	rm secure_file 2> errors.txt // 2 means the number of code of standard error in powershell.
+	cat errors.txt
+	rm secure_file 2> $null // $null means nothing, and this command will remove the error too.
 
 Return the assigned ip:
 	ipconfig /release
