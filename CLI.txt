@@ -84,6 +84,16 @@ Combine 2 thing above:
 Delete account:
 	net user andrea /del
 	Remove-LocalUser andrea
+See permission of file or folder:
+	icacls .\Desktop\
+icacls help:
+	icacls /?
+Grant permission for file or folder:
+	icacls '.\vacation_pic\' /grant 'Everyone:(OI)(CI)(R)' //Powershell
+	icacls "vacation_pic" /grant Everyone:(OI)(CI)(R) // Command promt
+	icacls '.\vacation_pic\' /grant 'Authenticated Users:(OI)(CI)(R)' //people have account can see this folder
+	icacls '.\vacation_pc\' /remove Everyone
+
 
 Return the assigned ip:
 	ipconfig /release
