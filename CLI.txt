@@ -1,0 +1,45 @@
+List directory:
+	ls D:\
+List directory (contain hidden file):
+	ls -Force D:\
+Print-working directory tell which directory you're currently in:
+	pwd
+Change directory:
+	cd C:\Users\balebom\Documents
+	cd ..\Desktop
+	cd ~\Documents
+Tab completion:
+	Character->Tab
+Make a directory:
+	mkdir my_supercool_file
+	mkdir 'my supercool file'
+Show history command:
+	history
+Search command in history:
+	ctrl + R -> enter character
+	#mkdir -> Tab
+Clear screen:
+	clear
+	cls
+Copy file:
+	cp my_supercool_file ..\
+	cp *.txt ..\
+    - Attention: Copy directory will not copy child of directory, in that case, use parameter -Recurse and -Verbose:
+	cp my_supercool_file ..\ -Recurse -Verbose
+Rename and move file:
+	mv .\CommandLineInput.txt .\CLI.txt
+	mv .\CLI.txt ..\CommandLineInput.txt
+	mv *.txt ..\
+Remove or delete file, take caution when using remove bc it doesn't use the recycle bin.
+Once the files and directory are removed, they're gone for good:
+	rm Hotdog.txt
+    - Attention: you can't remove system file, once you wanna do this, use -Force parameter:
+	rm important_file.txt -Force
+    - Attention: remove a folder: 
+	rm my_supercool_file -Recurse
+Return the assigned ip:
+	ipconfig /release
+Add new ip address:
+	ipconfig /renew
+Hide folder:
+	attrib +R +S +H Z:\QTM_N1_T2 /S /D
