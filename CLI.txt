@@ -37,6 +37,18 @@ Once the files and directory are removed, they're gone for good:
 	rm important_file.txt -Force
     - Attention: remove a folder: 
 	rm my_supercool_file -Recurse
+Read file in powershell (except folder):
+	cat farm_animals.txt
+	more farm_animals.txt //enter:advance the file by one line; space: advance the file by one page; q: quit out of 'more' and go back to powershell.
+	cat farm_animals.txt -Head 10 //show first 10 lines of the file.
+	cat farm_animals.txt -Tail 10 //show last 10 lines of the file.
+Open (or create) a file:
+	start farm_animals.txt
+	start wordpad .\farm_animals.txt
+	start notepad new_file
+get alias of command:
+	get-alias ls
+
 Return the assigned ip:
 	ipconfig /release
 Add new ip address:
