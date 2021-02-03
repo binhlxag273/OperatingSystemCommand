@@ -94,6 +94,8 @@ Grant permission for file or folder:
 	icacls '.\vacation_pic\' /grant 'Authenticated Users:(OI)(CI)(R)' //people have account can see this folder
 	icacls '.\vacation_pc\' /remove Everyone
 
+Compress file or folder:
+	Compress-Archive -Path .\secrect_file\ .\cool_archive.zip
 
 Return the assigned ip:
 	ipconfig /release
