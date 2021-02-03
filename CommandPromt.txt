@@ -2,3 +2,4 @@ Create a directory:
 	mkdir my_supercool_file
 return the assigned ip:
 	ipconfig /release
+attrib +R +S +H Z:\QTM_N1_T2 /S /D
