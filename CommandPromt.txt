@@ -1,0 +1,2 @@
+Create a directory:
+	mkdir my_supercool_file
