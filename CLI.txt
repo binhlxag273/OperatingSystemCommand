@@ -70,6 +70,7 @@ When you rm (remove) secure_file, the error will show in the powershell; but whe
 
 User Account:
 Return all user account in system:
+	net-user
 	Get-LocalUser
 Return all group account in system:
 	Get-LocalGroup
