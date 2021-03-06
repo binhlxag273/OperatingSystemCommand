@@ -89,6 +89,8 @@ See permission of file or folder:
 	icacls .\Desktop\
 icacls help:
 	icacls /?
+Turn off inheritance:
+	icacls .\my_supercool_folder\ /inheritancelevel:d
 Grant permission for file or folder:
 	icacls '.\vacation_pic\' /grant 'Everyone:(OI)(CI)(R)' //Powershell
 	icacls "vacation_pic" /grant Everyone:(OI)(CI)(R) // Command promt
