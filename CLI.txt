@@ -104,5 +104,13 @@ Return the assigned ip:
 	ipconfig /release
 Add new ip address:
 	ipconfig /renew
+
+cmd:
 Hide folder:
 	attrib +R +S +H Z:\QTM_N1_T2 /S /D
+	attrib -R -S -H Z:\QTM_N1_T2 /S /D
+Partition Disk:
+	dispart
+	select disk 0
+	select partition 4
+	assign letter E
