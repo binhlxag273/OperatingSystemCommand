@@ -1,6 +1,6 @@
 create new file:
   touch foo.c  // my_func(void)...
-  touch foo.h
+  touch foo.h   // header file
   touch main.c
 edit file:
   nano foo.c
