@@ -1,0 +1,16 @@
+create new file:
+  touch foo.c  // my_func(void)...
+  touch foo.h
+  touch main.c
+edit file:
+  nano foo.c
+  nano foo.h
+  nano main.c
+shared library:
+  gcc -c -Wall -Werror -fpic foo.c  
+  gcc -shared -o libfoo.so foo.o
+  LD_LIBRARY_PATH=/mnt/LD_LIBRARY_PATH=/mnt/c/Users/User/OneDrive/Desktop:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/mnt/c/Users/User/OneDrive/Desktop:$LD_LIBRARY_PATH
+  gcc -Wall -o test_1 main.c -L/mnt/c/Users/User/OneDrive/Desktop -lfoo
+compile gcc in another folder:
+  gcc -Wall -o test_1 main.c -L/mnt/c/Users/User/OneDrive/Desktop -I/mnt/c/Users/User/OneDrive/Desktop -lfoo
