@@ -12,5 +12,13 @@ shared library:
   LD_LIBRARY_PATH=/mnt/LD_LIBRARY_PATH=/mnt/c/Users/User/OneDrive/Desktop:$LD_LIBRARY_PATH
   export LD_LIBRARY_PATH=/mnt/c/Users/User/OneDrive/Desktop:$LD_LIBRARY_PATH
   gcc -Wall -o test_1 main.c -L/mnt/c/Users/User/OneDrive/Desktop -lfoo
+  
+shared library much easier:
+  g++ -c -fpic lib_add.cpp lib_sub.cpp
+  g++ -shared -o lib_cacl.so *.o
+  g++ -c main.cpp -o main.o
+  export LD_LIBRARY_PATH=:/mnt/d/Linux
+  ./main
+  
 compile gcc in another folder:
   gcc -Wall -o test_1 main.c -L/mnt/c/Users/User/OneDrive/Desktop -I/mnt/c/Users/User/OneDrive/Desktop -lfoo
