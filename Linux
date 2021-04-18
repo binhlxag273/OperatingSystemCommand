@@ -17,6 +17,7 @@ shared library much easier:
   g++ -c -fpic lib_add.cpp lib_sub.cpp
   g++ -shared -o lib_cacl.so *.o
   g++ -c main.cpp -o main.o
+  g++ -o main main.o -L. -l_calc
   export LD_LIBRARY_PATH=:/mnt/d/Linux
   ./main
   
