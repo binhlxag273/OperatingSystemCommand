@@ -25,7 +25,6 @@ shared library with hpp file
   g++ -shared -fpic json.hpp -o lib_json.so 
  # if you want to tell g++ treat json.hpp as if it really was a cpp-file, you can do so by specifying the explicit type to -x.
   g++ -shared -fpic -x c++ json.hpp -o lib_json.so
-  g++ -c schema.cpp -o schema.o
   g++ -o schema schema.o -L. -l_json
   ./schema
   
