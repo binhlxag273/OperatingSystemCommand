@@ -21,5 +21,13 @@ shared library much easier:
   export LD_LIBRARY_PATH=:/mnt/d/Linux
   ./main
   
+shared library with hpp file
+  g++ -shared -fpic json.hpp -o lib_json.so 
+ # if you want to tell g++ treat hello.hpp as if it really was a cpp-file, you can do so by specifying the explicit type to -x.
+  g++ -shared -fpic -x c++ json.hpp -o lib_json.so
+  g++ -c schema.cpp -o schema.o
+  g++ -o schema schema.o -L. -l_json
+  ./schema
+  
 compile gcc in another folder:
   gcc -Wall -o test_1 main.c -L/mnt/c/Users/User/OneDrive/Desktop -I/mnt/c/Users/User/OneDrive/Desktop -lfoo
