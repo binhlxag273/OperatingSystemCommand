@@ -34,6 +34,9 @@ compile gcc in another folder:
 check if memory is leaked:
   valgrind --leak-check=yes ./main
 
+create a folder with subfolder:
+  mkdir -p out/build/
+
 remove a folder:
   rm -rf out/
 
