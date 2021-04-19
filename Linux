@@ -30,3 +30,6 @@ shared library with hpp file
   
 compile gcc in another folder:
   gcc -Wall -o test_1 main.c -L/mnt/c/Users/User/OneDrive/Desktop -I/mnt/c/Users/User/OneDrive/Desktop -lfoo
+
+check if memory is leaked:
+  valgrind --leak-check=yes ./main
