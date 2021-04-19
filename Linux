@@ -33,3 +33,7 @@ compile gcc in another folder:
 
 check if memory is leaked:
   valgrind --leak-check=yes ./main
+
+remove a folder:
+  rm -rf out/
+
