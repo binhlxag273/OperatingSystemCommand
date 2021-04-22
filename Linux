@@ -40,3 +40,23 @@ create a folder with subfolder:
 remove a folder:
   rm -rf out/
 
+extract .tar file:
+  tar -zxvf abc...tar
+  
+mongodb command:
+##################################
+Start MongoDB:
+  sudo sustemctl start mongod
+if fail, run following command, then start again:
+  sudo systemctl daemon-reload
+
+Verify MongoDB has started successfully:
+  sudo systemctl status mongod
+Optionally ensure that MongoDB will start follwing a system reboot ...:
+  sudo systemctl enable mongod
+stop MongoDB:
+  sudo systemctl stop mongod
+Restart MongoDB:
+  sudo systemctl restart mongod
+Begin using MongoDB:
+  mongo
