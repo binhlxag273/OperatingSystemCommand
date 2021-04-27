@@ -1,10 +1,10 @@
 # OperationSystemCommand
 
-### Comparision in Linux shell script
+## Comparision in Linux shell script
 
 ##############################################################
 
-  integer comparision
+###  integer comparision
 
   -eq | is equal to | if [ $a -eq $b ]
   
@@ -28,7 +28,7 @@
 
 ###############################################################
 
-  string comparision
+### string comparision
   
   = | is equal to | if [ $a = $b ]
   
