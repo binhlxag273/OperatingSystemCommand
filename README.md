@@ -21,9 +21,9 @@
   
   <= | is less than or equal to | if (( $a <= $b ))
   
-  > | is greater than | if (( $a > $b ))
+  \> | is greater than | if (( $a > $b ))
  
-  >= | is greater than or equal to | if (( $a >= $b ))
+  \>= | is greater than or equal to | if (( $a >= $b ))
 
 ###############################################################
 
