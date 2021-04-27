@@ -37,6 +37,6 @@
   
   < | is less than, in ASCII alphabetical order | if [[ $a < $b ]]
   
-  > | is greater than , in ASCII alphabetical order | if [[ $a > $b ]]
+  \> | is greater than , in ASCII alphabetical order | if [[ $a > $b ]]
   
   -z | string is null, that is, has zero length
