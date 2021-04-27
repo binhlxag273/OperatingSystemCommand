@@ -6,8 +6,7 @@
 
   integer comparision
 
-  -eq | is equal to | if [ $a -eq $b ]
-  
+  -eq | is equal to | if [ $a -eq $b ]\n
   -ne | is not equal to | if [ $a -ne $b ]
   
   -gt | is greater than | if [ $a -gt $b ]
